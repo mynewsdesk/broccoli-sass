@@ -39,6 +39,7 @@ SassCompiler.prototype.write = function (readTree, destDir) {
         file: includePathSearcher.findFileSync(self.inputFile, includePaths),
         includePaths: includePaths,
         outFile: destFile,
+        precision: 10,
         success: function() {
           deferred.resolve();
         },
